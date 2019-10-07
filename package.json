@@ -1,5 +1,5 @@
 {
-  "name": "node-console-menu",
+  "name": "@lukewarlow/node-console-menu",
   "author": "Luke Warlow",
   "version": "1.0.2",
   "license": "Apache 2",
@@ -10,6 +10,7 @@
   ],
   "description": "A simple library to handle the menus for your node console applications.",
   "repository": "github:lukewarlow/NodeConsoleMenu",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
