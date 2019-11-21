@@ -27,12 +27,12 @@ export abstract class AbstractMenu {
                 }
             }
 
-            let itemIndex = question("Select option: ");
+            let itemIndex: any = question("Select option: ");
 
             if (isNaN(Number(itemIndex))) {
                 console.log("Invalid option, you need to enter a number.");
             } else {
-                let menuItem = this.menuItems[itemIndex as unknown as number];
+                let menuItem = this.menuItems[itemIndex as number];
                 if (menuItem == null) {
                     console.log(`Invalid option. Option ${itemIndex} doesn't exist.`);
                     repeat = true;
